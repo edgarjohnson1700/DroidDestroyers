@@ -74,40 +74,40 @@
 			<key>points</key>
 			<array>
 				<array>
-					<real>357.484375</real>
-					<real>29.40625</real>
+					<real>9.5625</real>
+					<real>28.453125</real>
 				</array>
 				<array>
-					<real>357.484375</real>
-					<real>1246.796875</real>
+					<real>33.84375</real>
+					<real>1001.71875</real>
 				</array>
 				<array>
-					<real>914.828125</real>
-					<real>1259.09375</real>
+					<real>466.796875</real>
+					<real>1001.71875</real>
 				</array>
 				<array>
-					<real>927.421875</real>
-					<real>29.40625</real>
+					<real>468.96875</real>
+					<real>31.21875</real>
 				</array>
 			</array>
 			<key>polygons</key>
 			<array>
 				<array>
 					<array>
-						<real>927.421875</real>
-						<real>29.40625</real>
+						<real>468.96875</real>
+						<real>31.21875</real>
 					</array>
 					<array>
-						<real>914.828125</real>
-						<real>1259.09375</real>
+						<real>466.796875</real>
+						<real>1001.71875</real>
 					</array>
 					<array>
-						<real>357.484375</real>
-						<real>1246.796875</real>
+						<real>33.84375</real>
+						<real>1001.71875</real>
 					</array>
 					<array>
-						<real>357.484375</real>
-						<real>29.40625</real>
+						<real>9.5625</real>
+						<real>28.453125</real>
 					</array>
 				</array>
 			</array>
@@ -168,7 +168,7 @@
 				<key>value</key>
 				<array>
 					<string></string>
-					<string>myGameAssets/iphone_PNG5736.png</string>
+					<string>myGameAssets/assets/new_iphone_smiling.png</string>
 				</array>
 			</dict>
 			<dict>

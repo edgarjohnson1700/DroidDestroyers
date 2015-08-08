@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Bucket: CCNode {
+class Bucket: CCNodeColor {
     
     func didLoadFromCCB(){
         self.physicsBody.sensor = true

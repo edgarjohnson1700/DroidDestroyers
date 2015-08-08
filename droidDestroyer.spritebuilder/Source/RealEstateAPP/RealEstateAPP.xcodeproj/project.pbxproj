@@ -1,0 +1,426 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		368CCD211B76475E004607BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368CCD201B76475E004607BF /* AppDelegate.swift */; };
+		368CCD231B76475E004607BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368CCD221B76475E004607BF /* ViewController.swift */; };
+		368CCD261B76475E004607BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 368CCD241B76475E004607BF /* Main.storyboard */; };
+		368CCD281B76475E004607BF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 368CCD271B76475E004607BF /* Images.xcassets */; };
+		368CCD2B1B76475E004607BF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 368CCD291B76475E004607BF /* LaunchScreen.xib */; };
+		368CCD371B76475E004607BF /* RealEstateAPPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368CCD361B76475E004607BF /* RealEstateAPPTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		368CCD311B76475E004607BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 368CCD131B76475E004607BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 368CCD1A1B76475E004607BF;
+			remoteInfo = RealEstateAPP;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		368CCD1B1B76475E004607BF /* RealEstateAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealEstateAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		368CCD1F1B76475E004607BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		368CCD201B76475E004607BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		368CCD221B76475E004607BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		368CCD251B76475E004607BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		368CCD271B76475E004607BF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		368CCD2A1B76475E004607BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		368CCD301B76475E004607BF /* RealEstateAPPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RealEstateAPPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		368CCD351B76475E004607BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		368CCD361B76475E004607BF /* RealEstateAPPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealEstateAPPTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		368CCD181B76475E004607BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		368CCD2D1B76475E004607BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		368CCD121B76475E004607BF = {
+			isa = PBXGroup;
+			children = (
+				368CCD1D1B76475E004607BF /* RealEstateAPP */,
+				368CCD331B76475E004607BF /* RealEstateAPPTests */,
+				368CCD1C1B76475E004607BF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		368CCD1C1B76475E004607BF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				368CCD1B1B76475E004607BF /* RealEstateAPP.app */,
+				368CCD301B76475E004607BF /* RealEstateAPPTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		368CCD1D1B76475E004607BF /* RealEstateAPP */ = {
+			isa = PBXGroup;
+			children = (
+				368CCD201B76475E004607BF /* AppDelegate.swift */,
+				368CCD221B76475E004607BF /* ViewController.swift */,
+				368CCD241B76475E004607BF /* Main.storyboard */,
+				368CCD271B76475E004607BF /* Images.xcassets */,
+				368CCD291B76475E004607BF /* LaunchScreen.xib */,
+				368CCD1E1B76475E004607BF /* Supporting Files */,
+			);
+			path = RealEstateAPP;
+			sourceTree = "<group>";
+		};
+		368CCD1E1B76475E004607BF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				368CCD1F1B76475E004607BF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		368CCD331B76475E004607BF /* RealEstateAPPTests */ = {
+			isa = PBXGroup;
+			children = (
+				368CCD361B76475E004607BF /* RealEstateAPPTests.swift */,
+				368CCD341B76475E004607BF /* Supporting Files */,
+			);
+			path = RealEstateAPPTests;
+			sourceTree = "<group>";
+		};
+		368CCD341B76475E004607BF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				368CCD351B76475E004607BF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		368CCD1A1B76475E004607BF /* RealEstateAPP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 368CCD3A1B76475E004607BF /* Build configuration list for PBXNativeTarget "RealEstateAPP" */;
+			buildPhases = (
+				368CCD171B76475E004607BF /* Sources */,
+				368CCD181B76475E004607BF /* Frameworks */,
+				368CCD191B76475E004607BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RealEstateAPP;
+			productName = RealEstateAPP;
+			productReference = 368CCD1B1B76475E004607BF /* RealEstateAPP.app */;
+			productType = "com.apple.product-type.application";
+		};
+		368CCD2F1B76475E004607BF /* RealEstateAPPTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 368CCD3D1B76475E004607BF /* Build configuration list for PBXNativeTarget "RealEstateAPPTests" */;
+			buildPhases = (
+				368CCD2C1B76475E004607BF /* Sources */,
+				368CCD2D1B76475E004607BF /* Frameworks */,
+				368CCD2E1B76475E004607BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				368CCD321B76475E004607BF /* PBXTargetDependency */,
+			);
+			name = RealEstateAPPTests;
+			productName = RealEstateAPPTests;
+			productReference = 368CCD301B76475E004607BF /* RealEstateAPPTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		368CCD131B76475E004607BF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Edgar Johndon";
+				TargetAttributes = {
+					368CCD1A1B76475E004607BF = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					368CCD2F1B76475E004607BF = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 368CCD1A1B76475E004607BF;
+					};
+				};
+			};
+			buildConfigurationList = 368CCD161B76475E004607BF /* Build configuration list for PBXProject "RealEstateAPP" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 368CCD121B76475E004607BF;
+			productRefGroup = 368CCD1C1B76475E004607BF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				368CCD1A1B76475E004607BF /* RealEstateAPP */,
+				368CCD2F1B76475E004607BF /* RealEstateAPPTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		368CCD191B76475E004607BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				368CCD261B76475E004607BF /* Main.storyboard in Resources */,
+				368CCD2B1B76475E004607BF /* LaunchScreen.xib in Resources */,
+				368CCD281B76475E004607BF /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		368CCD2E1B76475E004607BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		368CCD171B76475E004607BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				368CCD231B76475E004607BF /* ViewController.swift in Sources */,
+				368CCD211B76475E004607BF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		368CCD2C1B76475E004607BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				368CCD371B76475E004607BF /* RealEstateAPPTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		368CCD321B76475E004607BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 368CCD1A1B76475E004607BF /* RealEstateAPP */;
+			targetProxy = 368CCD311B76475E004607BF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		368CCD241B76475E004607BF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				368CCD251B76475E004607BF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		368CCD291B76475E004607BF /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				368CCD2A1B76475E004607BF /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		368CCD381B76475E004607BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		368CCD391B76475E004607BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		368CCD3B1B76475E004607BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RealEstateAPP/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		368CCD3C1B76475E004607BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RealEstateAPP/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		368CCD3E1B76475E004607BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RealEstateAPPTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RealEstateAPP.app/RealEstateAPP";
+			};
+			name = Debug;
+		};
+		368CCD3F1B76475E004607BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RealEstateAPPTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RealEstateAPP.app/RealEstateAPP";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		368CCD161B76475E004607BF /* Build configuration list for PBXProject "RealEstateAPP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				368CCD381B76475E004607BF /* Debug */,
+				368CCD391B76475E004607BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		368CCD3A1B76475E004607BF /* Build configuration list for PBXNativeTarget "RealEstateAPP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				368CCD3B1B76475E004607BF /* Debug */,
+				368CCD3C1B76475E004607BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		368CCD3D1B76475E004607BF /* Build configuration list for PBXNativeTarget "RealEstateAPPTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				368CCD3E1B76475E004607BF /* Debug */,
+				368CCD3F1B76475E004607BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 368CCD131B76475E004607BF /* Project object */;
+}

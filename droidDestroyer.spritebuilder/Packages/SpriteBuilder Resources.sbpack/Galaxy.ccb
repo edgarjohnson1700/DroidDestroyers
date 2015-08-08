@@ -10,7 +10,7 @@
 		<false/>
 	</dict>
 	<key>UUID</key>
-	<integer>3</integer>
+	<integer>4</integer>
 	<key>centeredOrigin</key>
 	<false/>
 	<key>currentResolution</key>
@@ -79,31 +79,31 @@
 				</array>
 				<array>
 					<real>0.0</real>
-					<real>50</real>
+					<real>196.70703125</real>
 				</array>
 				<array>
-					<real>26</real>
-					<real>50</real>
+					<real>103.5625</real>
+					<real>196.70703125</real>
 				</array>
 				<array>
-					<real>26</real>
-					<real>0.0</real>
+					<real>106.328125</real>
+					<real>1.2890625</real>
 				</array>
 			</array>
 			<key>polygons</key>
 			<array>
 				<array>
 					<array>
-						<real>26</real>
-						<real>0.0</real>
+						<real>106.328125</real>
+						<real>1.2890625</real>
 					</array>
 					<array>
-						<real>26</real>
-						<real>50</real>
+						<real>103.5625</real>
+						<real>196.70703125</real>
 					</array>
 					<array>
 						<real>0.0</real>
-						<real>50</real>
+						<real>196.70703125</real>
 					</array>
 					<array>
 						<real>0.0</real>
@@ -168,7 +168,7 @@
 				<key>value</key>
 				<array>
 					<string></string>
-					<string>myGameAssets/samsung-galaxy-phone-png-2.png</string>
+					<string>myGameAssets/new_galaxy_frown.png</string>
 				</array>
 			</dict>
 			<dict>

@@ -23,13 +23,17 @@ class Galaxy: CCSprite {
     var delegate: Galaxydelegate!
     
     
+    override func onExit() {
+        var explosion = CCBReader.load("Explosion") as! CCParticleSystem
+        explosion.position = self.position
+        parent.addChild(explosion)
+        
+       
+        super.onExit()
+    }
+    
 }
 
 protocol Galaxydelegate {
-    
-    func galaxyscore ()
-
-
-    
-    
+    func galaxyscore()
 }
