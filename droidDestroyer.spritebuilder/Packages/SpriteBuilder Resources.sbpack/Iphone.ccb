@@ -10,7 +10,7 @@
 		<false/>
 	</dict>
 	<key>UUID</key>
-	<integer>2</integer>
+	<integer>11</integer>
 	<key>centeredOrigin</key>
 	<false/>
 	<key>currentResolution</key>
@@ -44,7 +44,7 @@
 		<key>displayName</key>
 		<string>CCSprite</string>
 		<key>memberVarAssignmentName</key>
-		<string></string>
+		<string>iphone</string>
 		<key>memberVarAssignmentType</key>
 		<integer>1</integer>
 		<key>physicsBody</key>
@@ -74,40 +74,40 @@
 			<key>points</key>
 			<array>
 				<array>
-					<real>9.5625</real>
-					<real>28.453125</real>
+					<real>-1.7909070253372192</real>
+					<real>0.12252034991979599</real>
 				</array>
 				<array>
-					<real>33.84375</real>
-					<real>1001.71875</real>
+					<real>1.1151818037033081</real>
+					<real>203.475341796875</real>
 				</array>
 				<array>
-					<real>466.796875</real>
-					<real>1001.71875</real>
+					<real>108.40563201904297</real>
+					<real>202.31584167480469</real>
 				</array>
 				<array>
-					<real>468.96875</real>
-					<real>31.21875</real>
+					<real>104.76567840576172</real>
+					<real>0.03445705771446228</real>
 				</array>
 			</array>
 			<key>polygons</key>
 			<array>
 				<array>
 					<array>
-						<real>468.96875</real>
-						<real>31.21875</real>
+						<real>104.76567840576172</real>
+						<real>0.03445705771446228</real>
 					</array>
 					<array>
-						<real>466.796875</real>
-						<real>1001.71875</real>
+						<real>108.40563201904297</real>
+						<real>202.31584167480469</real>
 					</array>
 					<array>
-						<real>33.84375</real>
-						<real>1001.71875</real>
+						<real>1.1151818037033081</real>
+						<real>203.475341796875</real>
 					</array>
 					<array>
-						<real>9.5625</real>
-						<real>28.453125</real>
+						<real>-1.7909070253372192</real>
+						<real>0.12252034991979599</real>
 					</array>
 				</array>
 			</array>
@@ -168,7 +168,7 @@
 				<key>value</key>
 				<array>
 					<string></string>
-					<string>myGameAssets/assets/new_iphone_smiling.png</string>
+					<string>myGameAssets/happy_iphone_2 copy.png</string>
 				</array>
 			</dict>
 			<dict>

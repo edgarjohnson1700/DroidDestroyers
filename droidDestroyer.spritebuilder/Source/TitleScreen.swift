@@ -9,11 +9,17 @@
 import Foundation
 
 class TitleScreen: CCNode {
-    
-    func switchScene() {
+    func didLoadFromCCB() {
+        let audioKit = OALSimpleAudio.sharedInstance()
+        audioKit.playBg("sounds/HeroicAge.mp3")
+    }
+       func switchScene() {
         println("works")
         let productionScene = CCBReader.loadAsScene("PickaSide")
-        CCDirector.sharedDirector().replaceScene(productionScene)
+//        let testTransition = CCTransition(pushwit
+        let transition = CCTransition(pushWithDirection: CCTransitionDirection.Up, duration: 1)
+        CCDirector.sharedDirector().replaceScene(productionScene, withTransition: transition)
+//        CCDirector.sharedDirector().replaceScene(productionScene)
     }
     
 }

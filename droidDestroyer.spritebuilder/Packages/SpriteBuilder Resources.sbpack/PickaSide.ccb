@@ -10,7 +10,7 @@
 		<false/>
 	</dict>
 	<key>UUID</key>
-	<integer>9</integer>
+	<integer>14</integer>
 	<key>centeredOrigin</key>
 	<false/>
 	<key>currentResolution</key>
@@ -74,8 +74,8 @@
 							<real>0.0</real>
 							<real>0.0</real>
 							<integer>0</integer>
-							<integer>0</integer>
-							<integer>0</integer>
+							<integer>2</integer>
+							<integer>2</integer>
 						</array>
 					</dict>
 					<dict>
@@ -137,6 +137,8 @@
 						<real>1</real>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -173,8 +175,8 @@
 							<real>0.0</real>
 							<real>0.0</real>
 							<integer>0</integer>
-							<integer>0</integer>
-							<integer>0</integer>
+							<integer>2</integer>
+							<integer>2</integer>
 						</array>
 					</dict>
 					<dict>
@@ -269,11 +271,11 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>160</real>
-							<real>525.468017578125</real>
+							<real>0.5</real>
+							<real>0.92511975765228271</real>
 							<integer>0</integer>
-							<integer>0</integer>
-							<integer>0</integer>
+							<integer>2</integer>
+							<integer>2</integer>
 						</array>
 					</dict>
 					<dict>
@@ -489,11 +491,11 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>171.52342224121094</real>
-							<real>207.42156982421875</real>
+							<real>0.48601070046424866</real>
+							<real>0.38806614279747009</real>
 							<integer>0</integer>
-							<integer>0</integer>
-							<integer>0</integer>
+							<integer>2</integer>
+							<integer>2</integer>
 						</array>
 					</dict>
 					<dict>
@@ -696,11 +698,11 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>149.50082397460938</real>
-							<real>468.468017578125</real>
+							<real>0.46719008684158325</real>
+							<real>0.82476764917373657</real>
 							<integer>0</integer>
-							<integer>0</integer>
-							<integer>0</integer>
+							<integer>2</integer>
+							<integer>2</integer>
 						</array>
 					</dict>
 					<dict>
@@ -873,7 +875,7 @@
 			</dict>
 			<dict>
 				<key>UUID</key>
-				<integer>6</integer>
+				<integer>12</integer>
 				<key>baseClass</key>
 				<string>CCSprite</string>
 				<key>children</key>
@@ -881,7 +883,7 @@
 				<key>customClass</key>
 				<string></string>
 				<key>displayName</key>
-				<string>new_galaxy_frown</string>
+				<string>HappyiPhoneSmall</string>
 				<key>memberVarAssignmentName</key>
 				<string></string>
 				<key>memberVarAssignmentType</key>
@@ -903,11 +905,11 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>160</real>
-							<real>86.486114501953125</real>
+							<real>0.46719008684158325</real>
+							<real>0.63908451795578003</real>
 							<integer>0</integer>
-							<integer>0</integer>
-							<integer>0</integer>
+							<integer>2</integer>
+							<integer>2</integer>
 						</array>
 					</dict>
 					<dict>
@@ -928,8 +930,8 @@
 						<string>ScaleLock</string>
 						<key>value</key>
 						<array>
-							<real>0.74589741230010986</real>
-							<real>0.74589741230010986</real>
+							<real>0.73153132200241089</real>
+							<real>0.73153132200241089</real>
 							<false/>
 							<integer>0</integer>
 						</array>
@@ -942,7 +944,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>myGameAssets/new_galaxy_frown.png</string>
+							<string>myGameAssets/assets/HappyiPhoneSmall.png</string>
 						</array>
 					</dict>
 					<dict>
@@ -981,7 +983,7 @@
 			</dict>
 			<dict>
 				<key>UUID</key>
-				<integer>7</integer>
+				<integer>13</integer>
 				<key>baseClass</key>
 				<string>CCSprite</string>
 				<key>children</key>
@@ -989,7 +991,7 @@
 				<key>customClass</key>
 				<string></string>
 				<key>displayName</key>
-				<string>new_iphone_smiling</string>
+				<string>Galaxy_frown2.0</string>
 				<key>memberVarAssignmentName</key>
 				<string></string>
 				<key>memberVarAssignmentType</key>
@@ -1011,11 +1013,11 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>149.50082397460938</real>
-							<real>355.16885375976562</real>
+							<real>0.50830078125</real>
+							<real>0.17895852029323578</real>
 							<integer>0</integer>
-							<integer>0</integer>
-							<integer>0</integer>
+							<integer>2</integer>
+							<integer>2</integer>
 						</array>
 					</dict>
 					<dict>
@@ -1025,8 +1027,8 @@
 						<string>Point</string>
 						<key>value</key>
 						<array>
-							<real>0.5</real>
-							<real>0.5</real>
+							<real>0.52529764175415039</real>
+							<real>0.50571364164352417</real>
 						</array>
 					</dict>
 					<dict>
@@ -1036,8 +1038,8 @@
 						<string>ScaleLock</string>
 						<key>value</key>
 						<array>
-							<real>0.13900165259838104</real>
-							<real>0.13900165259838104</real>
+							<real>0.79698759317398071</real>
+							<real>0.79698759317398071</real>
 							<false/>
 							<integer>0</integer>
 						</array>
@@ -1050,7 +1052,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>myGameAssets/assets/new_iphone_smiling.png</string>
+							<string>myGameAssets/assets/Galaxy_frown2.0.png</string>
 						</array>
 					</dict>
 					<dict>
@@ -1089,7 +1091,7 @@
 			</dict>
 		</array>
 		<key>customClass</key>
-		<string></string>
+		<string>PickaSide</string>
 		<key>displayName</key>
 		<string>CCNode</string>
 		<key>memberVarAssignmentName</key>
@@ -1158,8 +1160,6 @@
 				</array>
 			</dict>
 		</array>
-		<key>selected</key>
-		<true/>
 	</dict>
 	<key>notes</key>
 	<array/>

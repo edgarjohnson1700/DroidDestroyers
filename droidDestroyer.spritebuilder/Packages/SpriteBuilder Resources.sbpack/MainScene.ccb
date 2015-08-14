@@ -16,7 +16,7 @@
 	<key>currentResolution</key>
 	<integer>0</integer>
 	<key>currentSequenceId</key>
-	<integer>0</integer>
+	<integer>2</integer>
 	<key>docDimensionsType</key>
 	<integer>0</integer>
 	<key>fileType</key>
@@ -73,11 +73,11 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>47.979248046875</real>
-							<real>248</real>
+							<real>0.18575935065746307</real>
+							<real>0.43661972880363464</real>
 							<integer>0</integer>
-							<integer>0</integer>
-							<integer>0</integer>
+							<integer>2</integer>
+							<integer>2</integer>
 						</array>
 					</dict>
 					<dict>
@@ -181,11 +181,11 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>218.43672180175781</real>
-							<real>551.62274169921875</real>
+							<real>0.68261474370956421</real>
+							<real>0.97116678953170776</real>
 							<integer>0</integer>
-							<integer>0</integer>
-							<integer>0</integer>
+							<integer>2</integer>
+							<integer>2</integer>
 						</array>
 					</dict>
 					<dict>
@@ -220,7 +220,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>ccbResources/ccbSliderHandle.png</string>
+							<string>myGameAssets/assets/smaller heart.png</string>
 						</array>
 					</dict>
 					<dict>
@@ -289,11 +289,11 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>260.12576293945312</real>
-							<real>486.3916015625</real>
+							<real>0.81289303302764893</real>
+							<real>0.8563232421875</real>
 							<integer>0</integer>
-							<integer>0</integer>
-							<integer>0</integer>
+							<integer>2</integer>
+							<integer>2</integer>
 						</array>
 					</dict>
 					<dict>
@@ -328,7 +328,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>ccbResources/ccbSliderHandle.png</string>
+							<string>myGameAssets/assets/smaller heart.png</string>
 						</array>
 					</dict>
 					<dict>
@@ -397,11 +397,11 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>290.21578979492188</real>
-							<real>551.18902587890625</real>
+							<real>0.90692436695098877</real>
+							<real>0.97040319442749023</real>
 							<integer>0</integer>
-							<integer>0</integer>
-							<integer>0</integer>
+							<integer>2</integer>
+							<integer>2</integer>
 						</array>
 					</dict>
 					<dict>
@@ -436,7 +436,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>ccbResources/ccbSliderHandle.png</string>
+							<string>myGameAssets/assets/smaller heart.png</string>
 						</array>
 					</dict>
 					<dict>
@@ -505,11 +505,11 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>153.97923278808594</real>
-							<real>524.83050537109375</real>
+							<real>0.48118510842323303</real>
+							<real>0.92399734258651733</real>
 							<integer>0</integer>
-							<integer>0</integer>
-							<integer>0</integer>
+							<integer>2</integer>
+							<integer>2</integer>
 						</array>
 					</dict>
 					<dict>
@@ -554,7 +554,7 @@
 						<key>type</key>
 						<string>FontTTF</string>
 						<key>value</key>
-						<string>Helvetica</string>
+						<string>Helvetica-BoldOblique</string>
 					</dict>
 					<dict>
 						<key>name</key>
@@ -563,7 +563,7 @@
 						<string>FloatScale</string>
 						<key>value</key>
 						<array>
-							<real>18</real>
+							<real>32</real>
 							<integer>0</integer>
 						</array>
 					</dict>
@@ -798,11 +798,11 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>158</real>
-									<real>36.900001525878906</real>
+									<real>0.0</real>
+									<real>0.0</real>
 									<integer>0</integer>
-									<integer>0</integer>
-									<integer>0</integer>
+									<integer>2</integer>
+									<integer>2</integer>
 								</array>
 							</dict>
 							<dict>
@@ -837,7 +837,7 @@
 								<key>value</key>
 								<array>
 									<string></string>
-									<string>myGameAssets/assets/ground.png</string>
+									<string>myGameAssets/ice-background.png</string>
 								</array>
 							</dict>
 							<dict>
@@ -1003,8 +1003,8 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>154</real>
-									<real>115</real>
+									<real>158</real>
+									<real>89.779739379882812</real>
 									<integer>0</integer>
 									<integer>0</integer>
 									<integer>0</integer>
@@ -1032,8 +1032,6 @@
 								<string>Bucket.ccb</string>
 							</dict>
 						</array>
-						<key>selected</key>
-						<true/>
 						<key>seqExpanded</key>
 						<true/>
 					</dict>
@@ -1212,7 +1210,7 @@
 						<key>type</key>
 						<string>Check</string>
 						<key>value</key>
-						<false/>
+						<true/>
 					</dict>
 					<dict>
 						<key>name</key>
@@ -1232,8 +1230,8 @@
 							<real>0.0</real>
 							<real>0.0</real>
 							<integer>0</integer>
-							<integer>0</integer>
-							<integer>0</integer>
+							<integer>2</integer>
+							<integer>2</integer>
 						</array>
 					</dict>
 					<dict>
@@ -1369,11 +1367,11 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>121</real>
-							<real>179.53311157226562</real>
+							<real>0.37812501192092896</real>
+							<real>0.31607940793037415</real>
 							<integer>0</integer>
-							<integer>0</integer>
-							<integer>0</integer>
+							<integer>2</integer>
+							<integer>2</integer>
 						</array>
 					</dict>
 					<dict>
@@ -1616,7 +1614,7 @@ Destroy them</string>
 						<key>type</key>
 						<string>Check</string>
 						<key>value</key>
-						<false/>
+						<true/>
 					</dict>
 					<dict>
 						<key>name</key>
@@ -1633,11 +1631,11 @@ Destroy them</string>
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>103.375</real>
-							<real>284.05599975585938</real>
+							<real>0.32304686307907104</real>
+							<real>0.5000985860824585</real>
 							<integer>0</integer>
-							<integer>0</integer>
-							<integer>0</integer>
+							<integer>2</integer>
+							<integer>2</integer>
 						</array>
 					</dict>
 					<dict>
@@ -1866,7 +1864,7 @@ Iphone!!!!</string>
 						<key>type</key>
 						<string>Check</string>
 						<key>value</key>
-						<false/>
+						<true/>
 					</dict>
 					<dict>
 						<key>name</key>
@@ -1883,11 +1881,11 @@ Iphone!!!!</string>
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>138</real>
-							<real>151</real>
+							<real>0.5</real>
+							<real>0.11649332195520401</real>
 							<integer>0</integer>
-							<integer>0</integer>
-							<integer>0</integer>
+							<integer>2</integer>
+							<integer>2</integer>
 						</array>
 					</dict>
 					<dict>
@@ -2062,7 +2060,7 @@ Iphone!!!!</string>
 				<key>displayName</key>
 				<string>new_galaxy_frown</string>
 				<key>memberVarAssignmentName</key>
-				<string></string>
+				<string>galaxy</string>
 				<key>memberVarAssignmentType</key>
 				<integer>1</integer>
 				<key>properties</key>
@@ -2291,11 +2289,11 @@ Iphone!!!!</string>
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>136.375</real>
-							<real>334.05599975585938</real>
+							<real>0.42617186903953552</real>
+							<real>0.5881267786026001</real>
 							<integer>0</integer>
-							<integer>0</integer>
-							<integer>0</integer>
+							<integer>2</integer>
+							<integer>2</integer>
 						</array>
 					</dict>
 					<dict>
@@ -2495,8 +2493,8 @@ Iphone!!!!</string>
 							<real>0.0</real>
 							<real>0.0</real>
 							<integer>0</integer>
-							<integer>0</integer>
-							<integer>0</integer>
+							<integer>2</integer>
+							<integer>2</integer>
 						</array>
 					</dict>
 					<dict>
@@ -2588,8 +2586,8 @@ Iphone!!!!</string>
 									<integer>3</integer>
 									<key>value</key>
 									<array>
-										<real>230.43672180175781</real>
-										<real>622.63201904296875</real>
+										<real>0.72011476755142212</real>
+										<real>1.096183180809021</real>
 									</array>
 								</dict>
 								<dict>
@@ -2606,8 +2604,8 @@ Iphone!!!!</string>
 									<integer>3</integer>
 									<key>value</key>
 									<array>
-										<real>230.43672180175781</real>
-										<real>298.70932006835938</real>
+										<real>0.72011476755142212</real>
+										<real>0.52589666843414307</real>
 									</array>
 								</dict>
 							</array>
@@ -2627,7 +2625,7 @@ Iphone!!!!</string>
 				<key>displayName</key>
 				<string>new_iphone_smiling</string>
 				<key>memberVarAssignmentName</key>
-				<string></string>
+				<string>iphone</string>
 				<key>memberVarAssignmentType</key>
 				<integer>1</integer>
 				<key>properties</key>
@@ -2643,8 +2641,8 @@ Iphone!!!!</string>
 					<dict>
 						<key>baseValue</key>
 						<array>
-							<real>200.10423278808594</real>
-							<real>613.2249755859375</real>
+							<real>0.62532573938369751</real>
+							<real>1.079621434211731</real>
 						</array>
 						<key>name</key>
 						<string>position</string>
@@ -2652,11 +2650,11 @@ Iphone!!!!</string>
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>200.10423278808594</real>
-							<real>613.2249755859375</real>
+							<real>0.72011476755142212</real>
+							<real>0.52589666843414307</real>
 							<integer>0</integer>
-							<integer>0</integer>
-							<integer>0</integer>
+							<integer>2</integer>
+							<integer>2</integer>
 						</array>
 					</dict>
 					<dict>
@@ -2727,6 +2725,8 @@ Iphone!!!!</string>
 						<array/>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 				<key>seqExpanded</key>
 				<true/>
 			</dict>

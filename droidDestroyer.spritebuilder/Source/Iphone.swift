@@ -29,14 +29,7 @@ class Iphone: CCSprite  {
     
     var delegate: IphoneDelegate!
     
-//    override func onExit() {
-//        var iphoneExplosion = CCBReader.load("iphoneExplosion") as! CCParticleSystem
-//        iphoneExplosion.position = self.position
-//        parent.addChild(iphoneExplosion)
-//        super.onExit()
-//    }
-//
-    
+
     
 }
     

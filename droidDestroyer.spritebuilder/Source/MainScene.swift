@@ -1,4 +1,5 @@
 import Foundation
+var points: Int!
 
 class MainScene: CCNode, CCPhysicsCollisionDelegate, Galaxydelegate, IphoneDelegate {
     
@@ -7,12 +8,13 @@ class MainScene: CCNode, CCPhysicsCollisionDelegate, Galaxydelegate, IphoneDeleg
     var inTutorial = true
     var tutorialSection = 1
     var Gameplay = 3
+    var score = 0
     weak var iphone: Iphone!
     weak var galaxy: Galaxy!
     weak var ground: CCSprite!
     var gamePhysicsNode: CCPhysicsNode!
     weak var bucket: Bucket!
-    var points : NSInteger = 0
+    var points = 0
     weak var scoreLabel : CCLabelTTF!
     weak var restartButton : CCButton!
     var galaxyArray : [Galaxy] = []
@@ -24,19 +26,27 @@ class MainScene: CCNode, CCPhysicsCollisionDelegate, Galaxydelegate, IphoneDeleg
     var lifeArray: [CCSprite]!
     var droidSpawnLevel:Int = 0
     var iPhoneSpawnLevel:Int = 0
-    var score: Int!
     var lives: Int = 3
     var gameOver = false
     weak var livesLabel: CCLabelTTF!
+    
+    let audioKit = OALSimpleAudio.sharedInstance()
+    
+    
     func didLoadFromCCB() {
         userInteractionEnabled = false
-//        multipleTouchEnabled = true
+        multipleTouchEnabled = true
         gamePhysicsNode.collisionDelegate = self
+        playsound()
         gamePhysicsNode.debugDraw = false
         lifeArray = [life,life2,life3]
         //schedule("spawnDroid", interval: 4)
-       // schedule("spawnIphone", interval: 5)
-    
+        // schedule("spawnIphone", interval: 5)
+        
+        audioKit.playBg("sounds/SonOFARocket.mp3")
+        
+        
+        
     }
     
     func fixInteraction(){
@@ -44,15 +54,24 @@ class MainScene: CCNode, CCPhysicsCollisionDelegate, Galaxydelegate, IphoneDeleg
         userInteractionEnabled = true
         
     }
-   
+    
     
     func spawnDroid () {
         var intScreenWidth = Int(UIScreen.mainScreen().bounds.width)
         var galaxy = CCBReader.load("Galaxy") as! Galaxy
-        galaxy.scale = 0.35
-        var randomXPosition = CGFloat(arc4random_uniform(UInt32(screenSize.width - CGFloat(galaxy.scale) * galaxy.contentSize.width * 2)))
-
-        galaxy.position = ccp(randomXPosition + CGFloat(galaxy.scale) * galaxy.contentSize.width, UIScreen.mainScreen().bounds.height - 20)
+        
+        
+        if choseIphone == false {
+            
+            galaxy.spriteFrame = CCSpriteFrame(imageNamed: "myGameAssets/assets/AngryiPhoneSmall.png")
+            
+        }
+        
+        galaxy.scale = 0.4
+        
+        var randomXPosition = CGFloat(arc4random_uniform(UInt32(screenSize.width - CGFloat(galaxy.scale) * galaxy.contentSizeInPoints.width * 2)))
+        
+        galaxy.position = ccp(randomXPosition + CGFloat(galaxy.scale) * galaxy.contentSizeInPoints.width, UIScreen.mainScreen().bounds.height - 20)
         gamePhysicsNode.addChild(galaxy)
         galaxy.delegate = self
     }
@@ -60,7 +79,11 @@ class MainScene: CCNode, CCPhysicsCollisionDelegate, Galaxydelegate, IphoneDeleg
     func spawnIphone () {
         var iphone = CCBReader.load("Iphone") as! Iphone
         
-        iphone.scale = 0.070
+        iphone.scale = 0.4
+        if choseIphone == false {
+            iphone.spriteFrame = CCSpriteFrame(imageNamed: "myGameAssets/Galaxy Smile.png")
+            
+        }
         
         var randomXPosition = CGFloat(arc4random_uniform(UInt32(screenSize.width - CGFloat(iphone.scale) * iphone.contentSize.width * 2)))
         
@@ -68,45 +91,45 @@ class MainScene: CCNode, CCPhysicsCollisionDelegate, Galaxydelegate, IphoneDeleg
         
         gamePhysicsNode.addChild(iphone)
         iphone.delegate = self
-    
+        
         println("Iphone Spawn yea")
         println(iphone.position)
     }
     
     func destroyGalaxies(phoneToDestroy: Galaxy) {
         phoneToDestroy.removeFromParent()
-                score! += 1
+        score += 1
         
         if score > 10 {
-            droidSpawnLevel = droidSpawnLevel + 3
-        }
-            
-        else if score > 20 {
-            droidSpawnLevel = droidSpawnLevel + 4
-        }
-        else if score > 30 {
-            droidSpawnLevel = droidSpawnLevel + 5
-        }
-        else if score > 40{
             droidSpawnLevel = droidSpawnLevel + 6
         }
             
+        else if score > 20 {
+            droidSpawnLevel = droidSpawnLevel + 9
+        }
+        else if score > 30 {
+            droidSpawnLevel = droidSpawnLevel + 19
+        }
+        else if score > 40{
+            droidSpawnLevel = droidSpawnLevel + 20
+        }
+            
         else if score > 50{
-            droidSpawnLevel = droidSpawnLevel + 7
+            droidSpawnLevel = droidSpawnLevel + 30
         }
         
-            }
+    }
     
     func iphoneScore () {
         animationManager.runAnimationsForSequenceNamed("deathFlash")
         points -= 2
         scoreLabel.string = String(points)
-       if points < 0 {
-//            triggerGameOver()
-        
+        if points < 0 {
+            triggerGameOver()
+            
         }
-
-
+        
+        
     }
     
     override func touchBegan (touch: CCTouch!, withEvent event: CCTouchEvent) {
@@ -119,46 +142,36 @@ class MainScene: CCNode, CCPhysicsCollisionDelegate, Galaxydelegate, IphoneDeleg
                 
             }
             else if tutorialSection == 2{
-              animationManager.runAnimationsForSequenceNamed("Gameplay")
+                animationManager.runAnimationsForSequenceNamed("Gameplay")
                 inTutorial = false
-                schedule("spawnDroid", interval: 1)
-                schedule("spawnIphone", interval: 1.3)
+                schedule("spawnDroid", interval: 0.8)
+                schedule("spawnIphone", interval: 0.7)
                 
             }
             
-            //else if gameOver == true{
-               // print ("Screen has ended")
-               // animationManager.runAnimationsForSequenceNamed("endScreen")
-               // endScreen = true
-            //}
         }
         
     }
     
-    func ccPhysicsCollisionBegin(pair: CCPhysicsCollisionPair!, Iphone: CCNode!, collision: CCNode!) -> Bool {
+    func ccPhysicsCollisionBegin(pair: CCPhysicsCollisionPair!, Iphone: CCNode!, collision: CCNode!) -> ObjCBool {
         
-    return true
+        return true
     }
-        
-        
+    
+    
     func deathFlash() {
-
+        
     }
     
     
-    func ccPhysicsCollisionBegin(pair: CCPhysicsCollisionPair!, Iphone: CCNode!, level: CCNode!) -> Bool {
+    func ccPhysicsCollisionBegin(pair: CCPhysicsCollisionPair!, Iphone: CCNode!, level: CCNode!) -> ObjCBool {
         restartButton.visible = true;
         return true
     }
     
-    //func restart() {
-        //let scene = CCBReader.loadAsScene("MainScene")
-        //CCDirector.sharedDirector().presentScene(scene)
-       // println("Hey, the button is actually working")
-  //  }
     
     override func touchMoved(touch: CCTouch!, withEvent event: CCTouchEvent!) {
-     bucket.position.x = touch.locationInWorld().x
+        bucket.position.x = touch.locationInWorld().x
     }
     
     func galaxyscore () {
@@ -166,22 +179,22 @@ class MainScene: CCNode, CCPhysicsCollisionDelegate, Galaxydelegate, IphoneDeleg
         points++
         scoreLabel.string = String(points)
         
-
+        
     }
-
-    func ccPhysicsCollisionBegin(pair: CCPhysicsCollisionPair!, iphone: Iphone!, bucket: Bucket!) -> Bool{
     
+    func ccPhysicsCollisionBegin(pair: CCPhysicsCollisionPair!, iphone: Iphone!, bucket: Bucket!) -> ObjCBool{
+        
         print ("Collision Occured")
         iphone.removeFromParent()
         return true
         
         
-
-    
+        
+        
     }
     
-    func ccPhysicsCollisionBegin(pair: CCPhysicsCollisionPair!, galaxy: Galaxy!, ground: CCSprite!) -> Bool {
-         lives -= 1
+    func ccPhysicsCollisionBegin(pair: CCPhysicsCollisionPair!, galaxy: Galaxy!, ground: CCSprite!) -> ObjCBool {
+        lives -= 1
         galaxy.removeFromParent()
         if lifeCounter < 3 {
             if lifeCounter >= 0 {
@@ -196,7 +209,7 @@ class MainScene: CCNode, CCPhysicsCollisionDelegate, Galaxydelegate, IphoneDeleg
     
     
     
-    func ccPhysicsCollisionBegin(pair: CCPhysicsCollisionPair!, iphone: Iphone!, ground: CCSprite!) -> Bool {
+    func ccPhysicsCollisionBegin(pair: CCPhysicsCollisionPair!, iphone: Iphone!, ground: CCSprite!) -> ObjCBool {
         lives -= 1
         iphone.removeFromParent()
         if lifeCounter < 3 {
@@ -213,34 +226,38 @@ class MainScene: CCNode, CCPhysicsCollisionDelegate, Galaxydelegate, IphoneDeleg
     func isGameOver() -> Bool {
         
         if lives == 0 {
-//            triggerGameOver()
+            triggerGameOver()
         }
         
         
         return gameOver
-  
+        
     }
     
     
     func triggerGameOver() {
         
-       var oldHighScore = NSUserDefaults.standardUserDefaults().integerForKey("highScore")
+        
+        var oldHighScore = NSUserDefaults.standardUserDefaults().integerForKey("highScore")
         if points > oldHighScore {
             NSUserDefaults.standardUserDefaults().setInteger(points, forKey: "highScore")
         }
+        
+        NSUserDefaults.standardUserDefaults().setInteger(points, forKey: "yourScore")
         
         println("GameOver")
         gameOver = true
         unschedule("spawnDroid")
         unschedule("spawnIphone")
-            var endScreen = CCBReader.loadAsScene("endScreen")
-            CCDirector.sharedDirector().presentScene(endScreen)
-
-            
-        }
+        var endScreen = CCBReader.loadAsScene("endScreen")
+        CCDirector.sharedDirector().presentScene(endScreen)
+        
         
     }
- 
-
     
-
+    func playsound() {
+        //        OALSimpleAudio.sharedInstance().playBg("Resources/sounds/Hero Down.mp3", loop: true)
+        
+    }
+    
+}

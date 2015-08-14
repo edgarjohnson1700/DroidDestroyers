@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Bucket: CCNodeColor {
+class Bucket: CCSprite {
     
     func didLoadFromCCB(){
         self.physicsBody.sensor = true

@@ -8,23 +8,38 @@
 
 import Foundation
 
+var choseIphone: Bool = true
+
 class PickaSide: CCNode {
     
     func didLoadFromCCB(){
         userInteractionEnabled = true
+        let audioKit = OALSimpleAudio.sharedInstance()
+        audioKit.playBg("sounds/HeroicAge.mp3")
+
+
     }
     
     override func touchBegan(touch: CCTouch!, withEvent event: CCTouchEvent!) {
         let screenHeight = UIScreen.mainScreen().bounds.height
-//        let screenHeight = screenSize * 0.50
+
         
         if touch.locationInWorld().y > (screenHeight / 2) {
-            animationManager.runAnimationsForSequenceNamed("Gameplay")
-            
+            print("scene touched")
+//            animationManager.runAnimationsForSequenceNamed("Gameplay")
+          choseIphone = true
+            transferScene()
         }
         else {
-            animationManager.runAnimationsForSequenceNamed("Gameplay")
-
+            print("fuckshit")
+//            animationManager.runAnimationsForSequenceNamed("Gameplay")
+//            let goodGalaxy = CCBReader.load("goodGalaxy") as! CCSprite
+//            self.addChild(goodGalaxy)
+//            let badIphone = CCBReader.load("badIphone") as! CCSprite
+//            self.addChild(badIphone)
+            choseIphone = false
+            transferScene()
+            
         }
         
         
@@ -32,7 +47,7 @@ class PickaSide: CCNode {
   
     func transferScene() {
         
-        let productionScene = CCBReader.loadAsScene("Gameplay")
+        let productionScene = CCBReader.loadAsScene("MainScene")
         let transition = CCTransition(crossFadeWithDuration: 1)
         CCDirector.sharedDirector().replaceScene(productionScene, withTransition: transition)
 //        CCDirector.sharedDirector().replaceScene(productionScene)

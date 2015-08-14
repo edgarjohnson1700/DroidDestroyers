@@ -10,7 +10,7 @@
 		<false/>
 	</dict>
 	<key>UUID</key>
-	<integer>4</integer>
+	<integer>5</integer>
 	<key>centeredOrigin</key>
 	<false/>
 	<key>currentResolution</key>
@@ -44,7 +44,7 @@
 		<key>displayName</key>
 		<string>CCSprite</string>
 		<key>memberVarAssignmentName</key>
-		<string></string>
+		<string>galaxy</string>
 		<key>memberVarAssignmentType</key>
 		<integer>1</integer>
 		<key>physicsBody</key>
@@ -74,40 +74,40 @@
 			<key>points</key>
 			<array>
 				<array>
-					<real>0.0</real>
-					<real>0.0</real>
+					<real>4.156280517578125</real>
+					<real>1.0234375</real>
 				</array>
 				<array>
-					<real>0.0</real>
-					<real>196.70703125</real>
+					<real>2.921905517578125</real>
+					<real>196.32421875</real>
 				</array>
 				<array>
 					<real>103.5625</real>
 					<real>196.70703125</real>
 				</array>
 				<array>
-					<real>106.328125</real>
-					<real>1.2890625</real>
+					<real>104.58987426757812</real>
+					<real>2.0234375</real>
 				</array>
 			</array>
 			<key>polygons</key>
 			<array>
 				<array>
 					<array>
-						<real>106.328125</real>
-						<real>1.2890625</real>
+						<real>104.58987426757812</real>
+						<real>2.0234375</real>
 					</array>
 					<array>
 						<real>103.5625</real>
 						<real>196.70703125</real>
 					</array>
 					<array>
-						<real>0.0</real>
-						<real>196.70703125</real>
+						<real>2.921905517578125</real>
+						<real>196.32421875</real>
 					</array>
 					<array>
-						<real>0.0</real>
-						<real>0.0</real>
+						<real>4.156280517578125</real>
+						<real>1.0234375</real>
 					</array>
 				</array>
 			</array>
@@ -168,7 +168,7 @@
 				<key>value</key>
 				<array>
 					<string></string>
-					<string>myGameAssets/new_galaxy_frown.png</string>
+					<string>myGameAssets/assets/Galaxy_frown2.0.png</string>
 				</array>
 			</dict>
 			<dict>

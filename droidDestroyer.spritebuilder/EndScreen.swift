@@ -10,11 +10,23 @@ import Foundation
 
 
 class EndScreen : CCNode{
+    weak var yourScore: CCLabelTTF!
     weak var highScore: CCLabelTTF!
     
     func didLoadFromCCB(){
-        var score =  NSUserDefaults.standardUserDefaults().integerForKey("highScore")
-        highScore.string = "\(score)"
+        var highscore =  NSUserDefaults.standardUserDefaults().integerForKey("highScore")
+
+        var yourScoreNum = NSUserDefaults.standardUserDefaults().integerForKey("yourScore")
+        
+                if yourScoreNum > highscore {
+                    NSUserDefaults.standardUserDefaults().setObject(yourScoreNum, forKey:"highScore")
+                    var highscore =  NSUserDefaults.standardUserDefaults().integerForKey("highScore")
+
+                }
+        
+        highScore.string = "\(highscore)"
+       
+        yourScore.string = "\(yourScoreNum)"
     }
     
     func restart() {
@@ -22,6 +34,6 @@ class EndScreen : CCNode{
         CCDirector.sharedDirector().presentScene(scene)
         println("Hey, the button is actually working")
     }
-
+    
     
 }
