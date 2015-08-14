@@ -15,6 +15,7 @@
 		36D86AD41B6FEDE200C2FF40 /* EndScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D86AD31B6FEDE200C2FF40 /* EndScreen.swift */; };
 		36E5E5F41B7CF1C600908A33 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36E5E5F31B7CF1C600908A33 /* CoreAudio.framework */; };
 		36E5E5FA1B7D1E8200908A33 /* sounds in Resources */ = {isa = PBXBuildFile; fileRef = 36E5E5F91B7D1E8200908A33 /* sounds */; };
+		36E5E5FE1B7E917000908A33 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36E5E5FD1B7E917000908A33 /* Images.xcassets */; };
 		36EBD9D81B583DFA0048A76A /* Bucket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EBD9D71B583DFA0048A76A /* Bucket.swift */; };
 		5B121030197484FA004C1E1D /* droidDestroyerActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B12102F197484FA004C1E1D /* droidDestroyerActivity.m */; };
 		5B121038197487F2004C1E1D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B737893E1807617C0076A88C /* AppDelegate.m */; };
@@ -165,6 +166,7 @@
 		36D86AD31B6FEDE200C2FF40 /* EndScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndScreen.swift; sourceTree = "<group>"; };
 		36E5E5F31B7CF1C600908A33 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		36E5E5F91B7D1E8200908A33 /* sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = sounds; sourceTree = "<group>"; };
+		36E5E5FD1B7E917000908A33 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		36EBD9D71B583DFA0048A76A /* Bucket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Bucket.swift; path = Source/Bucket.swift; sourceTree = "<group>"; };
 		5B12100919748273004C1E1D /* libEGL.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libEGL.so; path = /usr/lib/armv7a/libEGL.so; sourceTree = SDKROOT; };
 		5B12100F197483EE004C1E1D /* ic_launcher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_launcher.png; sourceTree = "<group>"; };
@@ -543,6 +545,7 @@
 		B77F1B4617B978D7009739AE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				36E5E5FD1B7E917000908A33 /* Images.xcassets */,
 				7A40366119DDF8C2007B6E8F /* Platforms */,
 				5B12100D197483EE004C1E1D /* res */,
 				B73789911807667A0076A88C /* Icons */,
@@ -764,6 +767,7 @@
 				B71F591A188484E7003F4D28 /* Settings@2x.png in Resources */,
 				B7378976180762440076A88C /* Default-Landscape~ipad.png in Resources */,
 				B71F5915188484E7003F4D28 /* iPhone-old.png in Resources */,
+				36E5E5FE1B7E917000908A33 /* Images.xcassets in Resources */,
 				B71F5917188484E7003F4D28 /* iPhone.png in Resources */,
 				B7378975180762440076A88C /* Default-568h@2x.png in Resources */,
 				B71F5918188484E7003F4D28 /* iPhone@2x.png in Resources */,
@@ -1152,7 +1156,7 @@
 					"\"Source/libs/cocos2d-iphone/external/ObjectAL\"/**",
 				);
 				INFOPLIST_FILE = Source/Resources/Platforms/iOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
@@ -1189,7 +1193,7 @@
 					"\"Source/libs/cocos2d-iphone/external/ObjectAL\"/**",
 				);
 				INFOPLIST_FILE = Source/Resources/Platforms/iOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"-lz",
